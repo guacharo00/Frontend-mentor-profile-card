@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  min-width: 144rem;
+  height: 80vh;
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 90rem;
+    height: 90rem;
+    border-radius: 50%;
+    background: url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -41rem;
+    left: -22rem;
+  }
+  &::after {
+    content: "";
+    width: 90rem;
+    height: 90rem;
+    border-radius: 100%;
+    background: url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 34rem;
+    left: 72rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
